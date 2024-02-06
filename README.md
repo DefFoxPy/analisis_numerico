@@ -11,3 +11,6 @@ __semanas__
 
 3- **ecuaciones diferenciales** 
 [biseccion](https://github.com/DefFoxPy/analisis_numerico/blob/main/programa3_1.cpp) [newton](https://github.com/DefFoxPy/analisis_numerico/blob/main/programa3_5.cpp)
+
+4- ** Integración **
+[trapecio y simpson](https://github.com/DefFoxPy/analisis_numerico/blob/main/regla_trapecio_simpson.cpp) [gauss](https://github.com/DefFoxPy/analisis_numerico/blob/main/gauss.cpp)
