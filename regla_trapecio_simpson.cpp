@@ -21,6 +21,8 @@ double trapz(int n, double a, double b, double h)
 	double s = 0, x;
 	double w = 0;
 
+	cout << setw(2) << "n" << setw(ANCHO) << "x" << setw(ANCHO) << "h" << setw(ANCHO) << "func(x)" << setw(ANCHO) << "w" << endl;
+	
 	for (int i = 0; i <= n; i++)
 	{
 		x = a + i * h;
@@ -30,6 +32,8 @@ double trapz(int n, double a, double b, double h)
 			w = 1;
 		}
 		s = s + w * func(x);
+
+
 		cout << setw(2) << i << setw(ANCHO) << x << setw(ANCHO) << h << setw(ANCHO) << func(x) << setw(ANCHO) << w << endl; 
 	}
 	s = s * h / 2;
