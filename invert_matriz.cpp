@@ -47,9 +47,6 @@ pair<vector<vector<double>>, double> invertmatrizWithDeterminant(const vector<ve
             det = 0.0; // El determinante es cero, por lo tanto, la matriz es singular.
             break;
         }
-        // Multiplicar el determinante por el valor del pivote
-        det *= pivotValue;
-
         // Normalizar la fila del pivote
         for (int j = 0; j < n; ++j) {
             temp[i][j] /= pivotValue;
@@ -66,6 +63,8 @@ pair<vector<vector<double>>, double> invertmatrizWithDeterminant(const vector<ve
                 }
             }
         }
+        // Multiplicar el determinante por el valor del pivote
+        det *= pivotValue;
     }
 
     return make_pair(inverse, det);
