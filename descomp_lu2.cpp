@@ -27,8 +27,10 @@ void printMatriz(const vector<vector<double>>& matriz) {
 int luDecomposition(vector<vector<double>>& mat, bool pivot) {
     int n = mat.size();
     int permutationCount = 0;
+    double det = 1.0; // Inicialización del determinante
 
     for (int k = 0; k < n; k++) {
+        
         if (pivot) {
             int maxRow = k;
             for (int i = k + 1; i < n; i++) {
@@ -44,7 +46,7 @@ int luDecomposition(vector<vector<double>>& mat, bool pivot) {
 
         for (int i = k + 1; i < n; i++) {
             if (mat[k][k] == 0) {
-                cerr << "Error: ¡División entre cero!" << endl;
+                cout << "Error: ¡División entre cero!" << endl;
                 return -1;
             }
             double factor = mat[i][k] / mat[k][k];
@@ -53,7 +55,14 @@ int luDecomposition(vector<vector<double>>& mat, bool pivot) {
                 mat[i][j] -= factor * mat[k][j];
             }
         }
+
+        det *= mat[k][k];
     }
+    if (permutationCount % 2 == 1){
+        det *= -1;
+    }
+
+    cout << "\nDeterminante: " << det << endl;
 
     return permutationCount;
 }
