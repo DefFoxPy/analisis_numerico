@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <limits>
 using namespace std;
 
 const int L = 15; // para fines de mostrar la matriz
+const double EPS = numeric_limits<double>::epsilon(); // epsilon de la máquina
 
 void swapRows(vector<vector<double>>& mat, int row1, int row2) {
     int cols = mat[0].size();
@@ -45,7 +47,7 @@ int luDecomposition(vector<vector<double>>& mat, bool pivot) {
         }
 
         for (int i = k + 1; i < n; i++) {
-            if (mat[k][k] == 0) {
+            if (mat[k][k] < EPS) {
                 cout << "Error: ¡División entre cero!" << endl;
                 return -1;
             }
