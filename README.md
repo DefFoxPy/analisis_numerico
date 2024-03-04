@@ -14,3 +14,10 @@ __semanas__
 
 4- **Integración**
 [trapecio y simpson](https://github.com/DefFoxPy/analisis_numerico/blob/main/regla_trapecio_simpson.cpp) [gauss](https://github.com/DefFoxPy/analisis_numerico/blob/main/gauss.cpp)
+
+5- **Diferenciaels**
+nope
+
+6 - **Algebra lineal**
+[inversa de una matriz](https://github.com/DefFoxPy/analisis_numerico/blob/main/invert_matriz.cpp)
+[descomposición LU](https://github.com/DefFoxPy/analisis_numerico/blob/main/descomp_lu2.cpp)
