@@ -26,3 +26,4 @@ nope
 nope
 
 8- **Ajuste de curva**
+[min_cuadrados](https://github.com/DefFoxPy/analisis_numerico/blob/main/min_cuadrados.cpp)
