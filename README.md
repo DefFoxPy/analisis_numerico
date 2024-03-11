@@ -21,3 +21,8 @@ nope
 6 - **Algebra lineal**
 [inversa de una matriz](https://github.com/DefFoxPy/analisis_numerico/blob/main/invert_matriz.cpp)
 [descomposición LU](https://github.com/DefFoxPy/analisis_numerico/blob/main/descomp_lu2.cpp)
+
+7- **Autovalores**
+nope
+
+8- **Ajuste de curva**
