@@ -27,3 +27,6 @@ nope
 
 8- **Ajuste de curva**
 [min_cuadrados](https://github.com/DefFoxPy/analisis_numerico/blob/main/min_cuadrados.cpp)
+
+9- **EDO condiciones iniciales**
+[EDO](https://github.com/DefFoxPy/analisis_numerico/tree/main/edo_cond_iniciales)
