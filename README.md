@@ -30,3 +30,6 @@ nope
 
 9- **EDO condiciones iniciales**
 [EDO](https://github.com/DefFoxPy/analisis_numerico/tree/main/edo_cond_iniciales)
+
+10- **EDO condiciones frontera**
+[EDF](https://github.com/DefFoxPy/analisis_numerico/tree/main/edo_frontera)
